@@ -1,3 +1,4 @@
+// main.js: app entry point, which loads and initializes Vue along with the root component
 import Vue from 'vue'
 import App from './App.vue'
 
