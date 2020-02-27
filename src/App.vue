@@ -1,23 +1,12 @@
-<!-- app.vue: Root component, which is the starting point from which all other components will be rendered -->
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <MainPage msg="The Start of Budgeting"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div> -->
+    <router-view/>
   </div>
 </template>
-
-<script>
-// import HelloWorld from './components/HelloWorld.vue'
-import MainPage from './components/MainPage.vue'
-
-export default {
-  name: 'app',
-  components: {
-    MainPage
-  }
-}
-</script>
 
 <style>
 #app {
@@ -26,6 +15,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 10px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
